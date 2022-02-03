@@ -34,3 +34,7 @@ void loop() {
 }
 
 ```
+
+# Manual Command 
+
+pio run -t upload --upload-port 192.168.1.46
