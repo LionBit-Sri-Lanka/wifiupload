@@ -7,8 +7,8 @@
 #include <ota.h>
 
 
-const char* ssid = "King-knight";
-const char* password = "nrl1633n";
+const char* ssid = "..........."; /* WiFi SSID */
+const char* password = "........."; /* WiFi password */
 
 
 void setup() {
@@ -22,14 +22,14 @@ void setup() {
     delay(5000);
     ESP.restart();
   }
-  ota_start();
+  ota_start(); /* WiFi upload setup */
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
 
 }
 
 void loop() {
-  ota_run();
+  ota_run(); /* Always need to run in main looop */
  
 }
 
