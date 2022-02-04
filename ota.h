@@ -35,6 +35,7 @@ void ota_start()
                      else if (error == OTA_END_ERROR)
                          Serial.println("End Failed");
                  });
+    ArduinoOTA.setHostname("lionbit");
 
     ArduinoOTA.begin();
 }
